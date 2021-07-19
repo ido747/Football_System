@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1176.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UILayer.Controllers.TeamOwnerController">
+    <children>
+
+        <fx:include fx:id="navBar" source="Landing.fxml" />
+        <ChoiceBox fx:id="choseAssentTypeForRemove" layoutX="397.0" layoutY="191.0" prefWidth="150.0" value="Player">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Player" />
+                    <String fx:value="Coach" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+
+        <TextField fx:id="choseAssentNameForRemove" layoutX="397.0" layoutY="236.0" prefWidth="150.0" />
+
+        <JFXButton fx:id="remove" layoutX="584.0" layoutY="318.0" onAction="#removeAssentFromTeam" prefHeight="44.0" prefWidth="163.0" style="-fx-background-color: #B9F599; -fx-border-color: black; -fx-background-radius: 3em; -fx-border-radius: 3em; -fx-border-width: 2;" text="Remove Assent">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+
+        <Text layoutX="179.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REMOVE ASSENT FROM THE TEAM" textAlignment="CENTER" wrappingWidth="652.0222442626952">
+            <font>
+                <Font name="System Bold" size="33.0" />
+            </font>
+        </Text>
+          <Label alignment="CENTER" layoutX="230.0" layoutY="194.0" text="Chose Assent's Type" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="15.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER" layoutX="231.0" layoutY="235.0" text="Chose Assent's Name" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="15.0" />
+              </font>
+
+          </Label>
+
+
+    </children>
+</AnchorPane>

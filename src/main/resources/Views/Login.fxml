@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UILayer.Controllers.LoginController">
+    <children>
+        <fx:include fx:id="navBar" source="Landing.fxml" />
+    <Label id="labelTitle" fx:id="pleaseChoseType" layoutX="39.0" layoutY="132.0" prefHeight="36.0" prefWidth="453.0" stylesheets="@allPages.css" text="Please enter your account's details :">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Label>
+
+
+    <JFXButton id="button" fx:id="backBTN" layoutX="558.0" layoutY="348.0" onAction="#homePage" prefHeight="37.0" prefWidth="129.0" styleClass="d" stylesheets="@allPages.css" text="Back" textFill="#2c9e5b">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </JFXButton>
+
+    <JFXButton id="button" fx:id="login" layoutX="722.0" layoutY="348.0" onAction="#verifyDetails" prefHeight="37.0" prefWidth="129.0" styleClass="d" stylesheets="@allPages.css" text="Log In" textFill="#2c9e5b">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </JFXButton>
+
+
+    <Label fx:id="usernameLable" layoutX="42.0" layoutY="213.0" prefHeight="27.0" prefWidth="86.0" stylesheets="@allPages.css" text="Username" />
+    <TextField fx:id="usernameTF" layoutX="139.0" layoutY="214.0" prefHeight="0.0" prefWidth="170.0" />
+
+
+    <Label fx:id="passwordLable" layoutX="42.0" layoutY="274.0" prefHeight="27.0" prefWidth="86.0" stylesheets="@allPages.css" text="Password" />
+    <PasswordField fx:id="passwordTF" layoutX="139.0" layoutY="274.0" prefHeight="0.0" prefWidth="170.0" />
+
+    </children>
+
+</AnchorPane>

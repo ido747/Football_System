@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1176.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UILayer.Controllers.OpenCoachPageController">
+    <children>
+
+        <fx:include fx:id="navBar" source="Landing.fxml" />
+        <JFXButton fx:id="submit" layoutX="526.0" layoutY="307.0" onAction="#submitDetails" prefHeight="46.0" prefWidth="135.0" style="-fx-background-color: #393eff; -fx-border-color: black;" text="submit">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXButton>
+
+
+        <Pane layoutX="382.0" layoutY="146.0" prefHeight="46.0" prefWidth="191.0" style="-fx-background-color: #9cff64;-fx-border-color: black;">         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="13.0" text="Birth date">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+
+            </Label>
+        </children></Pane>
+        <Pane layoutX="385.0" layoutY="203.0" prefHeight="46.0" prefWidth="191.0" style="-fx-background-color: #9cff64;-fx-border-color: black;">
+            <children>
+                <Label alignment="CENTER" layoutX="10.0" layoutY="13.0" text="Team">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+
+                </Label>
+            </children></Pane>
+        <Text layoutX="424.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE COACH PAGE" textAlignment="CENTER" wrappingWidth="339.79999999999984">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+      <DatePicker fx:id="birthDay" layoutX="610.0" layoutY="146.0" />
+      <ChoiceBox fx:id="teams" layoutX="610.0" layoutY="213.0" prefHeight="26.0" prefWidth="174.0" />
+
+
+    </children>
+</AnchorPane>

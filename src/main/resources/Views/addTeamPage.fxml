@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1176.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UILayer.Controllers.OpenTeamController">
+    <children>
+
+        <fx:include fx:id="navBar" source="Landing.fxml" />
+        <TextField fx:id="chosenNation" layoutX="349.0" layoutY="169.0" prefWidth="150.0" />
+        <TextField fx:id="chosenHistory" layoutX="349.0" layoutY="223.0" prefWidth="150.0" />
+        <JFXButton id="button" fx:id="submit" layoutX="551.0" layoutY="300.0" onAction="#createTeamPage" prefHeight="46.0" prefWidth="135.0" stylesheets="@allPages.css" text="submit">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXButton>
+        <Text layoutX="424.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE TEAM PAGE" textAlignment="CENTER" wrappingWidth="339.79999999999984">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+          <Label alignment="CENTER" layoutX="195.0" layoutY="223.0" stylesheets="@allPages.css" text="team history">
+              <font>
+                  <Font name="System Bold" size="15.0" />
+              </font>
+
+          </Label>
+      <Label alignment="CENTER" layoutX="195.0" layoutY="169.0" stylesheets="@allPages.css" text="team nation">
+          <font>
+              <Font name="System Bold" size="15.0" />
+          </font>
+
+      </Label>
+
+
+    </children>
+</AnchorPane>
